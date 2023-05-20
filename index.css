@@ -84,7 +84,7 @@ nav {
 }
 
 .input::placeholder {
-  color: #777;
+  color: red;
 }
 
 .icon {
