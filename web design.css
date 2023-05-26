@@ -9,7 +9,7 @@ body, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 10px 20px;
   }
   
   .logo {
@@ -21,7 +21,6 @@ body, ul {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    margin-left: 20px;
   }
   
   .logo h1 {
@@ -36,15 +35,12 @@ body, ul {
   
   .menu li {
     margin-left: 20px;
-    margin-bottom: 25px;
-    
   }
   
   .menu li a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
-
   }
   
   .toggle {
@@ -66,9 +62,6 @@ body, ul {
       display: block;
     }
   }
-  
-  
-
   .ag-format-container {
     width: 1142px;
     margin: 0 auto;
