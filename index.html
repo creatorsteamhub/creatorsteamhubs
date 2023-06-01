@@ -1,3 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile to Desktop Mode Switch</title>
+    <script>
+        function switchToDesktopMode() {
+            // Display an alert to notify the user
+            alert("Switching to Desktop Mode");
+
+            // Modify the user agent to resemble a desktop browser
+            navigator._defineGetter_('userAgent', function () {
+                return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36';
+            });
+
+            // Refresh the page to apply the changes
+            window.location.reload();
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Mobile Site</h1>
+    <button onclick="switchToDesktopMode()">Switch to Desktop Mode</button>
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
