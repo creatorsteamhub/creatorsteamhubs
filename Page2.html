@@ -1,0 +1,96 @@
+
+<div class="navbar">
+    <a class="navbar-logo" href="#">Creators Team</a>
+    <ul class="navbar-links">
+      <li class="navbar-link"><a href="#">Home</a></li>
+      <li class="navbar-link"><a href="#">About</a></li>
+      <li class="navbar-link"><a href="#">Team</a></li>
+      <li class="navbar-link"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+<link rel="stylesheet" href="Page2.css">
+
+<center><h1 style="color: white; margin-top: 70px; ">Nothing But creativity</h1></center>
+<div style="margin-top: 50px;" class="cards-list">
+  
+    <div class="card 1">
+      <div class="card_image"> <img src="https://i.pinimg.com/originals/62/20/f1/6220f19d6c67587d5714ff5a2d5994e8.gif" /> </div>
+      <div class="card_title title-white">
+        <p>Card Title</p>
+      </div>
+    </div>
+    
+      <div class="card 2">
+      <div class="card_image">
+        <img src="https://uhdwallpapers.org/uploads/cache/4133895860/lonely-astronaut_400x225-mm-90.jpg" />
+        </div>
+      <div class="card_title title-white">
+        <p>Card Title</p>
+      </div>
+    </div>
+    
+    <div class="card 3">
+      <div class="card_image">
+        <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+      </div>
+      <div class="card_title">
+        <p>Card Title</p>
+      </div>
+    </div>
+      
+      <div class="card 4">
+      <div class="card_image">
+        <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+        </div>
+      <div class="card_title title-black">
+        <p>Card Title</p>
+      </div>
+      </div>
+    
+    </div>
+
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .button:hover {
+    transform: translateY(-3px);
+  }
+
+  /* 3D effect */
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: perspective(30px) rotateX(10deg);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: -1;
+  }
+
+  .button:hover::before {
+    opacity: 1;
+    transform: perspective(30px) rotateX(0deg);
+  }
+</style>
+</head>
+<body>
+  <center> <a style="margin-top: 30px;" href="#" class="button">Apply Now</a></center>
+</body>
+</html>

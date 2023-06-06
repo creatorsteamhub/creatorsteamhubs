@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Graphic.css">
+  <title>Graphic Designer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+    
+    .navbar {
+      background-color: transparent;
+      height: 60px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar-logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-right: 20px;
+      position: relative;
+    }
+    
+    .navbar-logo::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -5px;
+      left: 0;
+      background-color: black;
+      transform: skewX(-30deg);
+      z-index: -1;
+    }
+    
+    .navbar-links {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar-link {
+      margin-right: 20px;
+    }
+    
+    .navbar-link a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .navbar-link a:hover {
+      color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .cover-flow {
+      width: 600px;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateY(0deg);
+      animation: rotate 20s infinite linear;
+    }
+
+    .card {
+      position: absolute;
+      width: 200px;
+      height: 300px;
+      background-color: transparent;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      font-size: 24px;
+      line-height: 300px;
+      transition: transform 0.5s;
+    }
+
+    .card img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .card:nth-child(1) {
+      transform: rotateY(0deg) translateZ(300px);
+    }
+
+    .card:nth-child(2) {
+      transform: rotateY(40deg) translateZ(300px);
+    }
+
+    .card:nth-child(3) {
+      transform: rotateY(80deg) translateZ(300px);
+    }
+
+    .card:nth-child(4) {
+      transform: rotateY(120deg) translateZ(300px);
+    }
+
+    .card:nth-child(5) {
+      transform: rotateY(160deg) translateZ(300px);
+    }
+
+    .card:nth-child(6) {
+      transform: rotateY(200deg) translateZ(300px);
+    }
+
+    .card:nth-child(7) {
+      transform: rotateY(240deg) translateZ(300px);
+    }
+
+    .card:nth-child(8) {
+      transform: rotateY(280deg) translateZ(300px);
+    }
+
+    .card:nth-child(9) {
+      transform: rotateY(320deg) translateZ(300px);
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a class="navbar-logo" href="#">Creators Team</a>
+    <ul class="navbar-links">
+      <li class="navbar-link"><a href="#">Home</a></li>
+      <li class="navbar-link"><a href="#">About</a></li>
+      <li class="navbar-link"><a href="#">Team</a></li>
+      <li class="navbar-link"><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  
+  <div class="container">
+    <h1 style="color: #fff; margin-right: 250px; margin-left: 20px;">Create something with a Graphic<center> Designer</center></h1>
+    <div class="cover-flow">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8M2QlMjBhYnN0cmFjdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" height="150px" alt="Image 1">
+      </div>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrhUs4dh9J1Mq067sPI7HcTqsZWetHSefMhWN4hYfr5USyi5h2MNhYs04yBo0BNqwYiDw&usqp=CAU" height="150px" alt="Image 2">
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-vector/abstract-spheres-background_23-2149158749.jpg" height="150px" alt="Image 3">
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-vector/colorful-abstract-background_23-2148811705.jpg" height="150px" alt="Image 4">
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/premium-vector/modern-3d-bubbles-abstract-background_228198-188.jpg" height="150px" alt="Image 5">
+      </div>
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/abstract-wallpaper-background-colorful-balls-d-rendering_93675-124371.jpg" height="150px" alt="Image 6">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<center><a style="margin-bottom: 350px; position: absolute;" href="#" class="button">Explore More✌️</a></center>
+
