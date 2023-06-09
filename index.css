@@ -3,72 +3,7 @@
   padding: 0%;
 
 }
-
-/* Navbar styles */
-/* Reset some default styles */
-body, ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav {
-    background: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .logo h1 {
-    color: #fff;
-    font-size: 18px;
-  }
-  
-  .menu {
-    list-style: none;
-    display: flex;
-  }
-  
-  .menu li {
-    margin-left: 20px;
-  }
-  
-  .menu li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  .toggle {
-    width: 30px;
-    height: 30px;
-    background: url('menu-icon.png') no-repeat center;
-    background-size: cover;
-    cursor: pointer;
-    display: none;
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) {
-    .menu {
-      display: none;
-    }
-    
-    .toggle {
-      display: block;
-    }
-  }
+
   .group {
   display: flex;
   line-height: 28px;
