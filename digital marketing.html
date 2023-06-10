@@ -1,300 +1,284 @@
+
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+}
+
+.navbar {
+  background-color: transparent;
+  height: 60px;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   
+}
+
+.navbar-logo {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+}
+
+.navbar-logo::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  left: 0;
+  background-color: transparent;
+  transform: skewX(-30deg);
+  z-index: -1;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  margin-right: 20px;
+}
+
+.navbar-link a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-link a:hover {
+  color: green;
+}
+</style>
+<div class="navbar">
+  <a class="navbar-logo" href="#">Creators Team</a>
+  <ul class="navbar-links">
+    <li class="navbar-link"><a href="#">Home</a></li>
+    <li class="navbar-link"><a href="#">About</a></li>
+    <li class="navbar-link"><a href="#">Team</a></li>
+    <li class="navbar-link"><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing:border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.container {
-  padding: 64px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both
-}
-
-.column-66 {
-  float: left;
-  width: 66.66666%;
-  padding: 20px;
-}
-
-.column-33 {
-  float: left;
-  width: 33.33333%;
-  padding: 20px;
-}
-
-.large-font {
-  font-size: 48px;
-}
-
-.xlarge-font {
-  font-size: 64px
-}
-
-.button {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #04AA6D;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-@media screen and (max-width: 1000px) {
-  .column-66,
-  .column-33 {
-    width: 100%;
-    text-align: center;
-  }
-  img {
-    margin: auto;
-  }
-}
-</style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+    
+    video {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
+    
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 36px;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
 </head>
-<style>
-* { 
-             margin: 0; 
-             padding: 0; 
-             box-sizing: border-box; 
-         } 
-  
-         /* Navbar Styles */ 
-         .navbar { 
-             background-color: #333; 
-             height: 60px; 
-             display: flex; 
-             justify-content: space-between; 
-             align-items: center; 
-             padding: 0 20px; 
-         } 
-  
-         .navbar-logo { 
-             color: #fff; 
-             font-size: 20px; 
-             font-weight: bold; 
-             text-decoration: none; 
-         } 
-  
-         .navbar-menu { 
-             display: flex; 
-             list-style: none; 
-         } 
-  
-         .navbar-menu li { 
-             margin-left: 20px; 
-         } 
-  
-         .navbar-menu li a { 
-             color: #fff; 
-             text-decoration: none; 
-             font-size: 16px; 
-         } 
-  
-         /* Media Queries */ 
-         @media screen and (max-width: 768px) { 
-             .navbar { 
-                 flex-direction: column; 
-                 height: auto; 
-             } 
-  
-             .navbar-menu { 
-                 margin-top: 20px; 
-             } 
-  
-             .navbar-menu li { 
-                 margin-left: 0; 
-                 margin-bottom: 10px; 
-             } 
-         } 
-     </style> 
- </head> 
- <body> 
-     <nav class="navbar"> 
-         <a href="#" class="navbar-logo">Creators Team</a> 
-         <ul class="navbar-menu"> 
-             <li><a href="index.html">Home</a></li> 
-             <li><a href="About.html">About</a></li> 
-             <li><a href="Team.html">Team</a></li> 
-             <li><a href="#">Contact</a></li> 
-         </ul> 
-     </nav>
-  <body>
-
-<div style="text-align:center">
-  <h2></h2>
-  <p></p>
-</div>
-
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font"><b style="color: orange;" >"Digital Marketing"</b></h1>
-      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Why Digital Marketing ?</b></h1>
-      <p><span style="font-size:36px">Digital marketing is a strategic approach to promoting products </span>or services using various online channels and platforms. It involves creating engaging content, optimizing websites for search engines, leveraging social media platforms, and utilizing targeted advertising campaigns. The goal is to reach a wider audience, drive traffic, generate leads, and ultimately increase conversions and revenue. Digital marketing allows businesses to connect with their target audience in a cost-effective and measurable way, enabling effective targeting and personalized communication. </p>
-      <!DOCTYPE html>
-      <html>
-      <head>
-        <style>
-          /* CSS for the button */
-          .button {
-            display: inline-block;
-            background-color: #4CAF50; /* Set the background color */
-            border: none; /* Remove border */
-            color: white; /* Set the text color */
-            text-align: center; /* Align text in center */
-            text-decoration: none; /* Remove underline */
-            font-size: 16px; /* Set font size */
-            cursor: pointer; /* Add cursor on hover */
-            padding: 10px 20px; /* Add padding for better visual */
-            border-radius: 4px; /* Add border radius for rounded corners */
-          }
-      
-          /* CSS for responsive design */
-          @media (max-width: 600px) {
-            .button {
-              font-size: 14px; /* Reduce font size for smaller screens */
-              padding: 8px 16px; /* Reduce padding for smaller screens */
-            }
-          }
-        </style>
-      </head>
-      <body>
-        <a href="https://forms.gle/ekqouG1oTyMX2HBu9" class="button">Book Now</a>
-      </body>
-      </html>
-      
+<body>
+  <div class="video-container">
+    <video autoplay loop muted>
+      <source src="web Background video.mp4" type="video/mp4">
+      <!-- Add additional source elements for different video formats (e.g., WebM, Ogg) -->
+    </video>
+    <div class="text-overlay">
+      <h1>Digital Marketing</h1>
+      <p>"Unlock the potential of your brand with our comprehensive digital marketing solutions, driving growth, engagement, and ROI."</p>
     </div>
-    <div class="column-33">
-        <img src="https://wallpapercave.com/wp/wp3950068.jpg" width="335" height="471">
-    </div>
+    <center><h1 style="font-weight: 700; color: green; text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5) ; " >Digital Marketing</h1></center>
+   <center> <p style="color: black;font-weight: 900; text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5) ;" >Digital marketing is a strategic approach to promoting products or services using various online channels and platforms. It involves creating engaging content, optimizing websites for search engines, leveraging social media platforms, and utilizing targeted advertising campaigns. The goal is to reach a wider audience, drive traffic, generate leads, and ultimately increase conversions and revenue. Digital marketing allows businesses to connect with their target audience in a cost-effective and measurable way, enabling effective targeting and personalized communication "Unlock the potential of your brand with our comprehensive digital marketing solutions, driving growth, engagement, and ROI."</p></center>
+    <center><h1 style="margin-top: 60px; font-weight: 700; font-family: Georgia, 'Times New Roman', Times, serif;text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); " >Services For You</h1></center>
   </div>
-</div>
-
-<!-- Clarity Section -->
-<div class="container" style="background-color:#f1f1f1">
-  <div class="row">
-    <div class="column-33">
-      <img src="https://c0.wallpaperflare.com/preview/983/956/951/digital-marketing-search-engine-optimization-marketing-content.jpg" alt="App" width="335" height="471">
-    </div>
-    <div class="column-66">
-      <h1 class="xlarge-font"><b style="color: red;">Why is digital marketing important?</b></h1>
-      
-      <p><span style="font-size:24px">Any type of marketing can help your business thrive. However, digital marketing has become increasingly important because of how accessible digital channels are. In fact, there were 5 billion internet users globally in April 2022 alone.
-        From social media to text messages, there are many ways to use digital marketing tactics in order to communicate with your target audience. Additionally, digital marketing has minimal upfront costs, making it a cost-effective marketing technique for small businesses.
-        </span>
-        </p>
-     
-    </div>
-  </div>
-</div>
-
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Types of digital marketing</b></h1>
-      <h1 class="large-font" style="color:MediumSeaGreen;"><b>specializations?</b></h1>
-      <p><span style="font-size:36px">There are as many specializations .</span>Types of digital marketing are as many specializations within digital marketing as there are ways of interacting using digital media. Here are a few key examples of types of digital marketing tactics..</p>
-     
-    </div>
-    <div class="column-33">
-        <img src="https://media.istockphoto.com/id/1190949966/photo/marketing-of-digital-technology-business-concept.jpg?s=612x612&w=0&k=20&c=S5FEu8T57WLveM6MLFJe1lryU4T07Q2JZHtqNepEi5Y=" width="335" height="471" >
-    </div>
-  </div>
-</div>
-
-
-<div class="container" style="background-color:#f1f1f1">
-    <div class="row">
-      <div class="column-33">
-        <img src="https://media.istockphoto.com/id/1371081916/photo/content-wording-on-wooden-cubes-with-speech-bubbles.jpg?s=612x612&w=0&k=20&c=IafLno-lepWF1j_VPTEp0lDfIECo6-D82MfaWuX-Sps=" alt="App" width="335" height="471">
-      </div>
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Content marketing ?</b></h1>
-        
-        <p><span style="font-size:24px">As mentioned, the quality of your content is a key component of an optimized page. As a result, SEO is a major factor in content marketing, a strategy based on the distribution of relevant and valuable content to a target audience.
-            As in any marketing strategy, the goal of content marketing is to attract leads that ultimately convert into customers. But it does so differently than traditional advertising. Instead of enticing prospects with potential value from a product or service, it offers value for free in the form of written material, such as:
-            •	Blog posts
-            •	E-books
-            •	Newsletters
-            •	Video or audio transcripts
-            •	Whitepapers
-            •	Infographics
-            Content marketing matters, and there are plenty of stats to prove it:
-            •	84% of consumers expect companies to produce entertaining and helpful content experiences
-            •	62% of companies that have at least 5,000 employees produce content daily
-            •	92% of marketers believe that their company values content as an important asset
-            As effective as content marketing is, it can be tricky. Content marketing writers need to be able to rank highly in search engine results while also engaging people who will read the material, share it, and interact further with the brand. When the content is relevant, it can establish strong relationships throughout the pipeline.
-            To create effective content that’s highly relevant and engaging, it’s important to identify your audience. Who are you ultimately trying to reach with your content marketing efforts? Once you have a better grasp of your audience, you can determine the type of content you'll create. You can use many formats of content in your content marketing, including videos, blog posts, printable worksheets, and more.
-            Regardless of which content you create, it’s a good idea to follow content marketing best practices. This means making content that’s grammatically correct, free of errors, easy to understand, relevant, and interesting. Your content should also funnel readers to the next stage in the pipeline, whether that’s a free consultation with a sales representative or a signup page.
-            .
-          </span>
-          </p>
-       
-      </div>
-    </div>
-<!-- The App Section -->
-<div class="container">
-    <div class="row">
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>social media marketing</b></h1>
-        <h1 class="large-font" style="color:MediumSeaGreen;"><b></b></h1>
-        <p><span style="font-size:36px">Social media marketing means driving traffic and brand awareness by engaging people  .</span>in discussion online. You can use social media marketing to highlight your brand, products, services, culture, and more. With billions of people spending their time engaging on social media platforms, focusing on social media marketing can be worthwhile.
-            The most popular digital platforms for social media marketing are Facebook, Twitter, and Instagram, with LinkedIn and YouTube not far behind. Ultimately, which social media platforms you use for your business depends on your goals and audience. For example, if you want to find new leads for your FinTech startup, targeting your audience on LinkedIn is a good idea since industry professionals are active on the platform. On the other hand, running social media ads on Instagram may be better for your brand if you run a B2C focused on younger consumers.
-            Because social media marketing involves active audience participation, it has become a popular way of getting attention. It's the most popular content medium for B2C digital marketers at 96%, and it's gaining ground in the B2B sphere as well. According to the Content Marketing Institute, 61% of B2B content marketers increased their use of social media this year.
-            Social media marketing offers built-in engagement metrics, which are extremely useful in helping you to understand how well you're reaching your audience. You get to decide which types of interactions mean the most to you, whether that means the number of shares, comments, or total clicks to your website.
-            Direct purchase may not even be a goal of your social media marketing strategy. Many brands use social media marketing to start dialogues with audiences rather than encourage them to spend money right away. This is especially common in brands that target older audiences or offer products and services not appropriate for impulse buys. It all depends on your company's social media marketing goals.
-            ..</p>
-       
-      </div>
-      <div class="column-33">
-          <img src="https://www.centerwatch.com/ext/resources/images/editorial/SocialMediaMarketing-360x240.png?t=1666388363&width=360" width="335" height="471" >
-      </div>
-    </div>
-  </div>
-  
-    <div class="row">
-      <div class="column-33">
-        <img src="https://img.freepik.com/free-vector/marketing-automation-banner-technology-seo_107791-1833.jpg?w=2000" alt="App" width="335" height="471">
-      </div>
-      <div class="column-66">
-        <h1 class="xlarge-font"><b>Marketing automation?</b></h1>
-        
-        <p><span style="font-size:24px">Marketing automation uses software to power digital marketing campaigns, improving the efficiency and relevance of advertising. As a result, you can focus on creating the strategy behind your digital marketing efforts instead of cumbersome and time-consuming processes.
-          While marketing automation may seem like a luxury tool your business can do without, it can significantly improve the engagement between you and your audience.
-          According to statistics:
-          •	90% of US consumers find personalization either “very” or “somewhat” appealing
-          •	81% of consumers would like the brands they engage with to understand them better
-          •	77% of companies believe in the value of real-time personalization, yet 60% struggle with it
-          Marketing automation lets companies keep up with the expectation of personalization. It allows brands to:
-          •	Collect and analyze consumer information
-          •	Design targeted marketing campaigns
-          •	Send and post digital marketing messages at the right times to the right audiences
-          Many marketing automation tools use prospect engagement (or lack thereof) with a particular message to determine when and how to reach out next. This level of real-time customization means that you can effectively create an individualized marketing strategy for each customer without any additional time investment.
-          Mailchimp's marketing automation tools ensure you can interact with your audience via behavior-based automations, transactional emails, date-based automations, and more.
-          
-          </span>
-          </p>
-          
-          
 </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card {
+      width: 300px;
+      height: 400px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+      display: inline-block;
+    }
+    
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    
+    .card-content {
+      padding: 20px;
+    }
+    
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .card-description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    
+    .card-button {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background-color: black;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <center> <div style="margin-top: 180px;" class="card">
+    <img src="https://media.tenor.com/IiVj5gmk5zUAAAAC/search-engine-optimization-aizah-digital-digital-marketing.gif" alt="Image 1">
+    <div class="card-content">
+      <h2 class="card-title">Search engine optimization (SEO)
+      </h2>
+      <p class="card-description"> Keywords,
+        Backlinks,
+       Meta tags</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://digitalscholar.in/wp-content/uploads/2022/07/ppc-specialist.gif" alt="Image 2">
+    <div class="card-content">
+      <h2 class="card-title">Pay-per-click advertising (PPC)
+
+      </h2>
+      <p class="card-description">Keywords,
+        Campaigns,
+        Conversions</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://optimizemedia.in/wp-content/uploads/2022/05/social-media-final.gif" alt="Image 3">
+    <div class="card-content">
+      <h2 class="card-title">Social media marketing
+
+      </h2>
+      <p class="card-description">Engagement, Influence, Strategy</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://media.licdn.com/dms/image/C5612AQHZ7BN31iO87Q/article-cover_image-shrink_600_2000/0/1574202744541?e=2147483647&v=beta&t=1fhSSQDUWcBSr6kNm7hnapae9fSHI_6VQtY5SJOjwo4" alt="Image 4">
+    <div class="card-content">
+      <h2 class="card-title">Email marketing
+
+      </h2>
+      <p class="card-description">Subscribers,
+        Campaigns,
+        Conversion</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="https://www.jessfroggatt.com.au/wp-content/uploads/2019/11/ofx-animated-digi-ad-2.gif" alt="Image 4">
+    <div class="card-content">
+      <h2 class="card-title">Display advertising
+
+      </h2>
+      <p class="card-description">Digital Advertising,
+        Display Marketing,
+        Online Promotions</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://outgrow.co/blog/wp-content/uploads/2021/03/dwsdw.gif" alt="Image 4">
+    <div class="card-content">
+      <h2 class="card-title">Influencer marketing
+
+      </h2>
+      <p class="card-description">Collaboration,
+        Engagement,
+        Authenticity</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://v1technologies.co.uk/images/mobile-app-marketing.gif" alt="Image 4">
+    <div class="card-content">
+      <h2 class="card-title">Mobile marketing
+
+
+      </h2>
+      <p class="card-description">Advertising,
+        Engagement,
+        Targeting</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://static.wixstatic.com/media/42bf3c_80f7d741bb9d4f7e881f10be72e468a7~mv2.gif" alt="Image 4">
+    <div class="card-content">
+      <h2 class="card-title">Content marketing
+
+
+      </h2>
+      <p class="card-description">Engagement, Strategy, Conversion.</p>
+      <a class="card-button" href="https://docs.google.com/forms/d/e/1FAIpQLSerAW6h52OFEnyBjNNQJgkNYNk-857oTpqvMxY1_ZuUXJdqeg/viewform">Apply Here</a>
+    </div>
+  </div>
+
+ 
+  
+  </div></center>
+</body>
+</html>
+
