@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 /* header */
@@ -31,7 +31,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: black;
 }
 
 .header li a {
@@ -43,7 +43,7 @@ a {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: white;
 }
 
 .header .logo {
