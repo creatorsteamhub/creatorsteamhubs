@@ -9,11 +9,11 @@
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
-  background-color: #f4f4f4;
+  background-color: black;
 }
 
 a {
-  color: #000;
+  color: white;
 }
 
 /* header */
