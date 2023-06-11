@@ -465,7 +465,7 @@ footer{
 }
 
 @media (max-height:800px){
-	footer { position: relative; }
+	footer { position: static; }
 	header { padding-top:40px; }
 }
 
