@@ -317,7 +317,6 @@
 	
 	
 	
-	
 	<!DOCTYPE html>
 <html>
 <head>
@@ -333,6 +332,8 @@
       padding: 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
       animation: fade-in 0.5s ease-in-out;
+      max-width: 90%; /* Added max-width for responsiveness */
+      width: 400px; /* Added fixed width for larger screens */
     }
 
     /* Animation for fade in */
@@ -353,11 +354,12 @@
     /* Styling for the hyperlink buttons */
     .button-container {
       margin-top: 20px;
+      text-align: center; /* Center the buttons */
     }
 
     .button-container a {
       display: inline-block;
-      margin-right: 10px;
+      margin: 10px; /* Increased the margin for better spacing */
       padding: 10px 20px;
       background-color: #4CAF50;
       color: #fff;
@@ -368,6 +370,7 @@
     /* Styling for the refresh button */
     .refresh-button {
       margin-top: 20px;
+      text-align: center; /* Center the button */
     }
 
     .refresh-button button {
@@ -378,17 +381,26 @@
       border-radius: 5px;
       cursor: pointer;
     }
+
+    /* Responsive styles */
+    @media screen and (max-width: 600px) {
+      .popup-container {
+        width: 90%; /* Adjust the width for smaller screens */
+      }
+    }
   </style>
 </head>
 <body>
-  <center><div class="popup-container">
-    <span class="close-button" onclick="closePopup()">X</span>
-    <h2>Welcome to the Popup!</h2>
-    <div class="button-container">
-      <a href="#">Sign In</a>
-      <a href="#">Sign Up</a>
+  <center>
+    <div class="popup-container">
+      <span class="close-button" onclick="closePopup()">X</span>
+      <h2>Welcome to the Popup!</h2>
+      <div class="button-container">
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+      </div>
     </div>
-    </center>
+  </center>
 
   <script>
     // Function to close the popup
