@@ -13,77 +13,78 @@
     <!DOCTYPE html>
 <html>
 <head>
-    <title>Responsive Navbar with Logo Text</title>
-    <style>
-        /* CSS Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        /* Navbar Styles */
-        .navbar {
-            background-color: #333;
-            height: 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        
-        .navbar-logo {
-            color: #fff;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
-        .navbar-menu {
-            display: flex;
-            list-style: none;
-        }
-        
-        .navbar-menu li {
-            margin-left: 20px;
-        }
-        
-        .navbar-menu li a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        
-        /* Media Queries */
-        @media screen and (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                height: auto;
-            }
-            
-            .navbar-menu {
-                margin-top: 20px;
-            }
-            
-            .navbar-menu li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#" class="navbar-logo">Creators Team</a>
-        <ul class="navbar-menu">
-            <li><a href="index.html">Home</a></li>
-       
-            <li><a href="#">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
+    body { 
+   margin: 0; 
+   padding: 0; 
+   font-family: Arial, sans-serif; 
+  
+ } 
+  
+ .navbar { 
+   background-color: transparent; 
+   height: 60px; 
+  
+   top: 0; 
+   left: 0; 
+   width: 100%; 
+   z-index: 9999; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+  
+ } 
+  
+ .navbar-logo { 
+   color: black; 
+   font-size: 24px; 
+   font-weight: bold; 
+   text-decoration: none; 
+   margin-right: 20px; 
+   position: relative; 
+ } 
+  
+ .navbar-logo::before { 
+   content: ""; 
+   position: absolute; 
+   width: 100%; 
+   height: 100%; 
+   top: -5px; 
+   left: 0; 
+   background-color: transparent; 
+   transform: skewX(-30deg); 
+   z-index: -1; 
+ } 
+  
+ .navbar-links { 
+   display: flex; 
+   list-style-type: none; 
+   margin: 0; 
+   padding: 0; 
+ } 
+  
+ .navbar-link { 
+   margin-right: 20px; 
+ } 
+  
+ .navbar-link a { 
+   color: black; 
+   text-decoration: none; 
+   transition: color 0.3s ease; 
+ } 
+  
+ .navbar-link a:hover { 
+   color: green; 
+ } 
+ </style> 
+ <div class="navbar"> 
+   <a class="navbar-logo" href="index.html">Creators Team</a> 
+   <ul class="navbar-links"> 
+     <li class="navbar-link"><a href="index.html">Home</a></li> 
+  
+     <li class="navbar-link"><a href="Team.html">Team</a></li> 
+     <li class="navbar-link"><a href="contact.html">Contact</a></li> 
+   </ul> 
+ </div>
 
     <body>
         
