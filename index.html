@@ -14,109 +14,17 @@
 
 
   
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    /* CSS for Navbar */
-    *{margin: 0%;
-      padding: 0%;
-    
-    }
+<header class="header">
+  <a href="index.html" class="logo">Creators Team India</a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
 
-    .navbar {
-      overflow: hidden;
-      background-color: black;
-    }
-
-    .navbar a {
-      float: left;
-      display: flex;
-      color: #f2f2f2;
-      text-align: right;
-      
-      padding: 14px 16px;
-      text-decoration: none;
-      justify-content: center;
-  justify-content: space-between;
-    }
-
-    .navbar a:hover {
-   
-      color: white;
-    }
-
-    .navbar .icon {
-      display: none;
-    }
-
-    /* CSS for Logo */
-    .logo img {
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 10px;
-    }
-
-    .logo span {
-      font-size: 20px;
-      font-weight: bold;
-      vertical-align: middle;
-    }
-
-    /* CSS for Responsive Design */
-    @media screen and (max-width: 600px) {
-      .navbar a:not(:first-child) {
-        display: none;
-      }
-
-      .navbar a.icon {
-        float: right;
-        display: block;
-      }
-
-      .navbar.responsive .icon {
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      .navbar.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <div class="navbar" id="myNavbar">
-    <a href="#" class="logo">
-      <img src="https://creatorsteamhub.github.io/creatorsteamhubs/creators%20logo%2022.jpg" alt="Logo">
-      <span>creators Team India</span>
-    </a>
-    <a href="#">Home</a>
-      <a href="#">Team</a>
-    <a href="#">Contact</a>
-    
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      &#9776;
-    </a>
-  </div>
-
-  <script>
-    // JavaScript for Responsive Design
-    function myFunction() {
-      var x = document.getElementById("myNavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-  </script>
-</body>
-</html>
+    <li><a href="Team.html">Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
 
    <style>
   .alert {
